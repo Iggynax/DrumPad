@@ -1,0 +1,109 @@
+html {
+    background-color: rgb(0, 0, 0);
+}
+
+h1{
+    color:white;
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 2rem;
+}
+
+button {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: rgb(0, 0, 0);
+
+
+}
+.cabecera button{
+    justify-items: auto;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    border-color: rgb(214, 136, 18);
+    border-width: 3px;
+    padding: 2px;
+    padding-inline: 35px;
+    color:antiquewhite;
+    font-size: 20px;
+    
+}
+.funcionalidad {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.funcionalidad button {
+    background-color: rgb(255, 0, 0);
+    border-radius: 80px;
+    padding: 25px;
+    border-color: black;
+    border-width: 5px;
+    
+}
+.grid_container {
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    gap: 5px;
+    
+}
+.grid_item {
+   
+    border-radius: 10px;
+    border-color: rgb(214, 136, 18);
+    border-width: 3px;
+   
+}
+
+.grid_item::before{
+    content: "";
+    display:block;
+    padding-top: 100%;
+}
+#uno {
+    background-color: deeppink;
+}
+#dos {
+    background-color: gold;
+}
+#tres {
+    background-color: lime;
+}
+#cuatro {
+    background-color: rgb(56, 174, 243);
+}
+#cinco {
+    background-color: rgb(122, 48, 156);
+}
+#seis {
+    background-color: rgb(241, 81, 17);
+}
+#siete {
+    background-color: rgb(188, 245, 31);
+}
+#ocho {
+    background-color: rgb(240, 47, 121);
+}
+#nueve {
+    background-color: rgb(122, 197, 247);
+}
+
+@media screen and (min-width:768px){
+    
+.grid_container{
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+
+}    
+}
