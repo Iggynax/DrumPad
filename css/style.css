@@ -1,76 +1,93 @@
+
 html {
-    background-color: rgb(0, 0, 0);
+    height: 100%;
+    margin: o;
+    padding: 0;  
+    
 }
 
+body {
+    background: linear-gradient(to bottom, #0e010e, #c488f1);
+    
+}
 h1{
     color:white;
     text-align: center;
     font-family: 'Sedgwick Ave Display', cursive;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow:2px 2px 15px rgb(228, 8, 63);
+    text-decoration-line: underline;
 }
 
-button {
+/*button {
     font-family: 'Shadows Into Light', cursive;
     font-size: 20px;
 }
+
 .cabecera {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: rgb(0, 0, 0);
 
 
 }
 .cabecera button{
-    justify-items: auto;
+    
     background-color: rgb(0, 0, 0);
     border-radius: 30px;
     border-color: rgb(214, 136, 18);
     border-width: 3px;
     padding: 2px;
-    padding-inline: 35px;
+    
     color:antiquewhite;
     font-size: 20px;
     
-}
-.funcionalidad {
-    background-color: rgb(0, 0, 0);
+}*/
+./*recording {
+   
     display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    justify-content: space-evenly;
+    padding: 20px;
 }
-.funcionalidad button {
+#rec {
     background-color: rgb(255, 0, 0);
-    border-radius: 80px;
-    padding: 25px;
+    background: linear-gradient(to bottom, #fa0000, #ec5454);
+
+    border-radius: 50%;
+    padding: 20px;
     border-color: black;
-    border-width: 5px;
+    border-width: 6px;
+    font-family: 'Shadows Into Light';
+    font-size: 25px;
     
-}
-.grid_container {
-
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    
-    gap: 5px;
-    
-}
-.grid_item {
-   
-    border-radius: 10px;
-    border-color: rgb(214, 136, 18);
-    border-width: 3px;
-   
 }
 
-.grid_item::before{
-    content: "";
-    display:block;
-    padding-top: 100%;
-}
+#stop {
+    
+    background-color: rgb(22, 21, 21);
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-color: black;
+    border-width: 6px;
+    text-align: center;
+    
+}*/
+.grid_container{
+    
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        height: 80vh;
+        gap: 5px;
+ }
+    
+
+
+
 #uno {
     background-color: deeppink;
 }
@@ -97,13 +114,4 @@ button {
 }
 #nueve {
     background-color: rgb(122, 197, 247);
-}
-
-@media screen and (min-width:768px){
-    
-.grid_container{
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, 1fr);
-
-}    
 }
