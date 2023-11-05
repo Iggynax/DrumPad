@@ -19,15 +19,15 @@ drumButtons.forEach((button) => {
 
 // Mapeo de códigos ASCII a sonidos
 const sounds = {
-  49: "sounds/crash.wav", // Código ASCII del número 1
-  50: "sounds/hihat-close.wav", // Código ASCII del número 2
-  51: "sounds/hihat-open.wav", // Código ASCII del número 3
-  52: "sounds/kick.wav", // Código ASCII del número 4
-  53: "sounds/ride.wav", // Código ASCII del número 5
-  54: "sounds/snare.wav", // Código ASCII del número 6
-  55: "sounds/tom-high.wav", // Código ASCII del número 7
-  56: "sounds/tom-low.wav", // Código ASCII del número 8
-  57: "sounds/tom-mid.wav", // Código ASCII del número 9
+  49: "../sounds/crash.wav", // Código ASCII del número 1
+  50: "../sounds/hihat-close.wav", // Código ASCII del número 2
+  51: "../sounds/hihat-open.wav", // Código ASCII del número 3
+  52: "../sounds/kick.wav", // Código ASCII del número 4
+  53: "../sounds/ride.wav", // Código ASCII del número 5
+  54: "../sounds/snare.wav", // Código ASCII del número 6
+  55: "../sounds/tom-high.wav", // Código ASCII del número 7
+  56: "../sounds/tom-low.wav", // Código ASCII del número 8
+  57: "../sounds/tom-mid.wav", // Código ASCII del número 9
 };
 
 // Obtener elementos de audio
