@@ -74,7 +74,7 @@ window.addEventListener("click", (event) => {
 document
   .getElementById("btncompartirFacebook")
   .addEventListener("click", function () {
-    let url = "http://127.0.0.1:5500/";
+    let url = "https://drumpadmusic.netlify.app/";
     let compartirURL =
       "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url);
     window.open(compartirURL, "_blank");
@@ -84,7 +84,7 @@ document
 document
   .getElementById("btncompartirInstagram")
   .addEventListener("click", function () {
-    let url = "http://127.0.0.1:5500/";
+    let url = "https://drumpadmusic.netlify.app/";
     let texto = "¡Echa un vistazo a esta página!";
     let compartirURL =
       "https://www.instagram.com/" +
@@ -98,7 +98,7 @@ document
 document
   .getElementById("btncompartirTwitter")
   .addEventListener("click", function () {
-    let url = "http://127.0.0.1:5500/";
+    let url = "https://drumpadmusic.netlify.app/";
     let texto = "¡Echa un vistazo a esta página!";
     let compartirURL =
       "https://twitter.com/intent/tweet?url=" +
