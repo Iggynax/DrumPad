@@ -1,10 +1,5 @@
 `use strict`;
-/*const teclaUno;
-for teclaUno(function(sonido1){
-    return audios/crash.wav
-})*/
-/*const drumButton = document.querySelectorAll("grid_container button");
-myAudioElement.addEventListener ("play",("event"))*/
+
 // Obtener todos los botones en el drumpad
 const drumButtons = document.querySelectorAll(".grid_container button");
 
@@ -41,15 +36,14 @@ const drumSound = new Audio();
 // Agregar un controlador de eventos para el evento keydown
 document.addEventListener("keydown", (event) => {
   // Obtener el código ASCII de la tecla presionada
-  const keyCode = event.keyCode;
 
+  const mySound = sounds[event.keyCode];
   // Verificar si el código ASCII está mapeado a un sonido
-  if (sounds[keyCode]) {
+  if (mySound) {
     // Obtener la ruta del archivo de sonido correspondiente
-    const sound = sounds[keyCode];
 
     // Establecer la fuente del elemento de audio del drumpad con el sonido
-    drumSound.src = sound;
+    drumSound.src = mySound;
 
     // Reproducir el sonido del drumpad
     drumSound.play();
@@ -80,8 +74,8 @@ window.addEventListener("click", (event) => {
 document
   .getElementById("btncompartirFacebook")
   .addEventListener("click", function () {
-    var url = "http://127.0.0.1:5500/";
-    var compartirURL =
+    let url = "http://127.0.0.1:5500/";
+    let compartirURL =
       "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url);
     window.open(compartirURL, "_blank");
   });
@@ -90,9 +84,9 @@ document
 document
   .getElementById("btncompartirInstagram")
   .addEventListener("click", function () {
-    var url = "http://127.0.0.1:5500/";
-    var texto = "¡Echa un vistazo a esta página!";
-    var compartirURL =
+    let url = "http://127.0.0.1:5500/";
+    let texto = "¡Echa un vistazo a esta página!";
+    let compartirURL =
       "https://www.instagram.com/" +
       encodeURIComponent(url) +
       "&text=" +
@@ -104,9 +98,9 @@ document
 document
   .getElementById("btncompartirTwitter")
   .addEventListener("click", function () {
-    var url = "http://127.0.0.1:5500/";
-    var texto = "¡Echa un vistazo a esta página!";
-    var compartirURL =
+    let url = "http://127.0.0.1:5500/";
+    let texto = "¡Echa un vistazo a esta página!";
+    let compartirURL =
       "https://twitter.com/intent/tweet?url=" +
       encodeURIComponent(url) +
       "&text=" +
@@ -119,7 +113,7 @@ document
 document
   .getElementById("btnCopiarEnlace")
   .addEventListener("click", function () {
-    var input = document.getElementById("enlaceParaCopiar");
+    let input = document.getElementById("enlaceParaCopiar");
     input.style.display = "block";
 
     input.select();
@@ -138,9 +132,9 @@ document
 
 //Modal 2
 
-var btnTutorial = document.getElementById("btncanciones");
-var modal2 = document.getElementById("myModal2");
-var btnCerrarModal2 = document.getElementById("btnCerrarModal2");
+let btnTutorial = document.getElementById("btncanciones");
+let modal2 = document.getElementById("myModal2");
+let btnCerrarModal2 = document.getElementById("btnCerrarModal2");
 
 btnTutorial.addEventListener("click", function () {
   modal2.style.display = "block";
@@ -153,10 +147,6 @@ window.addEventListener("click", function (event) {
     modal2.style.display = "none";
   }
 });
-
-("use strict");
-
-// ... Tu código anterior ...
 
 // Agregar un controlador de eventos clic al botón "Rec"
 document.getElementById("rec").addEventListener("click", () => {
@@ -186,6 +176,6 @@ document.getElementById("play").addEventListener("click", () => {
     setTimeout(() => {
       const audio = new Audio(sound);
       audio.play();
-    }, index * 1000); // Reproduce cada sonido con un intervalo de 1 segundo
+    }, index * 500); // Reproduce cada sonido con un intervalo de 1 segundo
   });
 });
