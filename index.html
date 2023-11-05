@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="copyright" content="Equipo1 LOS JACAWARRIORS 2023 HaB">
-    <meta name="description" content="Página web de una batería interactiva">
-    <meta name="keywords" content="batería, bateria interactiva, juego, juego interactiva">
-    <meta name="author" content="Geral, Pedro, María, Naxo">
-    
-    <title>Drum Pad music</title>
+    <meta name="copyright" content="Equipo1 2023 HaB" />
+    <meta name="description" content="Página web de una batería interactiva" />
+    <meta
+      name="keywords"
+      content="batería, bateria interactiva, juego, juego interactiva"
+    />
+    <meta name="author" content="Naxo, Geral, Pedro, María" />
+    <title>Drum Pad</title>
     <!--<a href="https://www.flaticon.es/iconos-gratis/tambor" title="tambor iconos">Tambor iconos creados por Freepik - Flaticon<!-->
-    <link rel="icon" href="/image/tambor.png" title="favicon Drum" type="image/png" />
+    <link rel="icon" href="/image/tambor.png" title="favicon Drum" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,125 +23,108 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style2.css" />
-    <script src="https://kit.fontawesome.com/105ffbc452.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
-
   <body>
-    <div class="imageTop"></div>
-    <h1 id="appname">DRUMPAD MUSIC<img class="baquetas" src="/image/baquetasLogo.png"></i></h1>
-    </div>
+    <header>
+      <h1>
+        DrumPad
+        <img
+          class="imgprincipal"
+          src="/image/baquetasLogo.png"
+          alt="Logo Principal"
+        />
+      </h1>
+    </header>
+    <nav>
+      <ul class="menu">
+        <li class="m1"><a href="index.html">Inicio</a></li>
+        <li class="m2"><a href="/Html/juego.html">Juegos</a></li>
+        <li class="m3"><a href="/Html/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>¿Qué es un Drum Pad?</h2>
+      <p>
+        Un "drum pad" (en español, "pad de batería") es un dispositivo utilizado
+        en la música, especialmente en la producción musical y la interpretación
+        en vivo. A menudo, es una superficie plana, sensible al tacto, que se
+        asemeja a una batería electrónica o una superficie de pads. Los drum
+        pads pueden variar en tamaño y funcionalidad, pero su propósito
+        principal es permitir a los músicos y productores tocar sonidos de
+        percusión de manera más intuitiva y expresiva que utilizando un teclado
+        estándar.
+      </p>
+      <p>
+        Los drum pads se utilizan comúnmente para tocar sonidos de batería, como
+        tambores, platillos y otros elementos de percusión. Cada pad puede estar
+        asociado a un sonido específico y, al tocarlos con los dedos o baquetas,
+        se activan esos sonidos. Estos dispositivos son populares en una
+        variedad de géneros musicales, desde la música electrónica y el hip-hop
+        hasta el rock y el pop.
+      </p>
+      <p>
+        Los drum pads pueden ser autónomos, como las baterías electrónicas
+        portátiles que incluyen pads integrados, o pueden formar parte de un
+        controlador MIDI o una superficie de control en software de producción
+        musical, lo que permite a los músicos y productores disparar y manipular
+        sonidos percusivos en sus aplicaciones de producción.
+      </p>
 
-  
-    <div class="recording">
-      <button id="rec"><img src="/image/boton-rec.png" alt="grabar" id="btnrec"></button>
-      <button id="stop"><i class="fa-solid fa-play"></i></button>
-  
-      <audio id="drum-sound" controls ></audio>
-    </div>
-
-
-    <div class="grid_container">
-      <button class="grid_item" id="uno" data-sound="sounds/crash.wav">
-        <img src="image/crash.png" class= "instruments" alt="crash">
-        
-      </button>
-      <button class="grid_item" id="dos" data-sound="sounds/hihat-close.wav">
-        <img src="image/hihat-close.png" class= "instruments" alt="hihatclose">
-      </button>
-      <button class="grid_item" id="tres" data-sound="sounds/hihat-open.wav">
-        <img src="image/hihat-open.png" class= "instruments" alt="hihatopen">
-      </button>
-      <button class="grid_item" id="cuatro" data-sound="sounds/ride.wav">
-        <img src="image/ride.png" class= "instruments" alt="ride">
-      </button>
-      <button class="grid_item" id="cinco" data-sound="sounds/kick.wav">
-        <img src="image/kick.png" class= "instruments" alt="kick">
-
-      </button>
-      <button class="grid_item" id="seis" data-sound="sounds/snare.wav">
-        <img src="image/snare.png" class= "instruments" alt="snare">
-
-      </button>
-      <button class="grid_item" id="siete" data-sound="sounds/tom-high.wav">
-        <img src="image/tom-high-removebg-preview.png" class= "instruments" alt="tom-high">
-
-      </button>
-      <button class="grid_item" id="ocho" data-sound="sounds/tom-low.wav">
-         <img src="image/tom-low.png" class= "instruments" alt="tom-low">
-
-      </button>
-      <button class="grid_item" id="nueve" data-sound="sounds/tom-mid.wav">
-         <img src="image/tom-mid.png" class= "instruments" alt="tom-mid">
-
-      </button>
-    </div>
-    
+      <h3>Beneficios de la batería electrónica</h3>
+      <h4>Mayor versatilidad</h4>
+      <p>
+        Los conjuntos de batería electrónica tienen una gama más amplia de
+        sonidos y voces que los pads de batería electrónica. Esto significa que
+        los bateristas pueden crear una variedad más amplia de sonidos y estilos
+        musicales con una batería electrónica. Los conjuntos de batería
+        electrónica también suelen venir con kits de batería y bucles
+        preprogramados, lo que permite a los bateristas crear rápida y
+        fácilmente pistas de batería personalizadas.
+      </p>
+      <h4>Experiencia de juego más realista</h4>
+      <p>
+        Los juegos de batería electrónica suelen tener parches de tambor de
+        malla o goma que imitan de cerca la sensación y la respuesta de un juego
+        de batería acústica. Esto significa que los bateristas pueden tocar de
+        forma más natural y expresiva, con una gama más amplia de dinámicas y
+        articulaciones.
+      </p>
+      <h4>Calidad de sonido mejorada</h4>
+      <p>
+        Los conjuntos de batería electrónica utilizan tecnología avanzada de
+        muestreo y procesamiento de sonido para producir sonidos de batería
+        realistas y de alta calidad. Esto significa que los bateristas pueden
+        disfrutar de una experiencia de interpretación más auténtica e
+        inmersiva.
+      </p>
+      <h4>Más fácil de jugar</h4>
+      <p>
+        Los conjuntos de batería electrónica a menudo están equipados con
+        funciones como metrónomos incorporados, capacidades de grabación y
+        herramientas de práctica como pistas de acompañamiento y funciones de
+        entrenamiento. Esto facilita que los bateristas aprendan y mejoren sus
+        habilidades.
+      </p>
+      <h4>Ideal para presentaciones en vivo</h4>
+      <p>
+        Las baterías electrónicas son ideales para presentaciones en vivo, ya
+        que se pueden amplificar y mezclar fácilmente con otros instrumentos.
+        También ofrecen mayor consistencia y control sobre el sonido de la
+        batería, asegurando que el sonido del baterista sea siempre consistente
+        y balanceado con el resto de la banda.
+      </p>
+    </main>
 
     <footer>
-      <!--Modal de canciones-->
-      <button id="btncanciones" class="canciones">SONGLIST</button>
-      <div id="myModal2" class="modal">
-        <div class="modal-content">
-          <span class="close" id="btnCerrarModal2">&times;</span>
-          <h3>¡Elige tu canción!</h3>
-          <div class="lista-canciones">
-           <p>Platero y tu "Hay poco Rock & roll"</p>
-             <div class="cancion1">
-                 <audio controls>
-                   <source src="/songs/Platero y Tú  Hay Poco Rock and Roll drumless.mp3" type="audio/mp3">
-                 </audio>
-             </div>
-             <p>AC/DC "Back in Black"</p>
-             <div class="cancion2">
-               <audio controls>
-                 <source src="/songs/ACDC  Back In Black  Drumless.mp3" type="audio/mp3">
-               </audio>
-             </div>
-            <p>The White Stripes "Seven nation army"</p>
-             <div class="cancion3">
-               <audio controls>
-                 <source src="/songs/The White Stripes  Seven Nation Army drumless.mp3" type="audio/mp3">
-               </audio>
- 
-             </div>
-             <p>Adele "Rolling in the deep"</p>
-             <div class="cancion4">
-               <audio controls>
-                 <source src="/songs/Adele  Rolling in the Deep  Drumless  Score.mp3" type="audio/mp3">
-               </audio>
-             </div>
-          </div>
-        </div>
-      </div>
-    
-      <!--Modal de compartir-->
-      <button id="btncompartir"><i class="fa-regular fa-share-from-square"></i></button>
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close" id="btnCerrarModal">&times;</span>
-          <h3>¡Comparte este juego en tus plataformas!</h3>
-          <div class="compartir">
-            <div class="plataformas">
-              <div class="logo-facebook logo">
-                <button id="btncompartirFacebook"><img src="/image/facebook.jpeg" class="facebook"></button>
-              </div>
-              <div class="logo-instagram logo">
-                <button id="btncompartirInstagram"><img src="/image/instagram.jpeg" class="instagram"></button>
-              </div>
-              <div class="logo-twitter logo">
-                <button id="btncompartirTwitter" ><img src="/image/twitter.jpeg" class="twitter"></button>
-              </div>
-            </div>
-            <button id="btnCopiarEnlace">Copiar enlace</button>
-            <input type="text" value="http://127.0.0.1:5500/" id="enlaceParaCopiar" style="display: none;">
-          </div>
-        </div>
-      </div>
-
-     </footer>
-
-    <script src="/javascript/script.js"></script>
-    <script src="/javascript/scriptrecorder.js"></script>
+      <ul class="footer1">
+        <li class="f1"><a href="#">Política de Privacidad</a></li>
+        <li class="f2"><a href="#">Cookies</a></li>
+        <li class="f3">
+          <a href="/Html/contacto.html">Contacta con nosotros</a>
+        </li>
+        <li class="f4">Jaka Warriors. 2023. DrumPad</li>
+      </ul>
+    </footer>
   </body>
 </html>

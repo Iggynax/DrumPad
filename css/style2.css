@@ -26,8 +26,13 @@ h1{
 
 .baquetas{
     width: 60px;
+    margin-left: 10px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
 button {
     font-family: 'Shadows Into Light', cursive;
@@ -302,3 +307,4 @@ footer{
   audio  {
     width: 50px;
   }
+ }
