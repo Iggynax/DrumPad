@@ -180,6 +180,11 @@ footer{
         width: 80%;
         height: 100%;
     }
+    
+
+    body{
+        margin-bottom: 100%;
+    }
     nav{
         width: 100%;
     }
