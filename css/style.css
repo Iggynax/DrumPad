@@ -53,9 +53,6 @@ h1{
 }
 
 
-
-
-
 /*NAV                                                                     */
 
 
@@ -84,9 +81,7 @@ a:hover{
 main{
     height: 100vh;
     overflow:auto;
-    background-color: rgb(255, 255, 255);
-    margin-left: 40px;
-    margin-right: 40px;
+    background: linear-gradient(to bottom, #571657, #aa76b1);
 }
 h2{
     font-size: xx-large;
@@ -95,6 +90,8 @@ p{
     font-size: 2rem;
     margin-top: 15px;
     text-align: justify;
+    margin-left: 20px;
+        margin-right: 20px;
 }
 
 h3{
@@ -128,62 +125,76 @@ footer{
 }
 
 
-
-
-
-
-
-/* MEDIA 800PX */
-
-@media (max-width: 800px) {
-    header {
-        height: 150px;
+@media (max-width: 1164px) and (max-height: 966px)  {
+    main {
+        background-image: none; 
+        background: linear-gradient(to bottom, #571657, #aa76b1);
+        background-repeat: no-repeat;
+        background-size:  100%;
+        background-repeat: no-repeat;
+        background-position: center end;
+        width: 100vw;
+        height: 100vh;
+        
+        
     }
-    h1 {
-        font-size: 2rem;
-        letter-spacing: 0.2rem; 
+    p {
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    h3, h4 {
+        margin-left: 10px;
+    }
+    nav{
+        width: 100%;
+    }
+    header{
+        height: 100px;
+        width: 100%;
+
+    }
+body {
+    width: 100%;
+}
+    footer{
+        width: 100%;
+
+    }
+
+
+    h1{
+        z-index: 2;
+        font-size: 20px;
+        font-family: 'Sedgwick Ave Display', cursive;
+        position: absolute;
+        display: flex;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         letter-spacing: 2rem;
-        text-shadow: 5px 5px 5px  rgb(16, 223, 238); 
+        color:white;
+        text-align: center;
+        text-shadow:2px 2px 15px rgb(228, 8, 63);
+        justify-content: space-evenly;
+        margin-left: 20px;
+        margin-top: 10px;
     }
-    .menu {
-        font-size: 1.2rem; 
+    
+    .imgprincipal{
+        z-index: 999;
+        width: 30px;
+        height: 30px;
+    
     }
-    .footer1{
-        top: 0%;
-        left: 0%;
-        padding: 0%;
-        padding-top:0rem;
-        border: 0rem;
-    }
+    
 }
 
-/* MEDIA 400PX */
-@media (max-width: 400px) {
-    header {
-        height: 75px;
-    }
-    h1 {
-        font-size: 1.5rem;
-        letter-spacing: 0;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        letter-spacing: 2rem;
-        text-shadow: 5px 5px 5px  rgb(16, 223, 238); 
-    }
-    .menu {
-        font-size: 1rem; 
-    }
-    .footer1{
-        top: 0%;
-        left: 0%;
-        padding: 0%;
-        padding-top:0rem;
-        border: 0rem;
-    }
-}
+
+
+
+
 
 
