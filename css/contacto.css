@@ -9,6 +9,7 @@
 
 /* Setting base styles for HTML */
 html {
+    width: 100%;
   font-size: 62.5%; /* Trabajar con 1 rem = 10px (font-size=10px) (62.5% de 16px) */
   box-sizing: border-box; /* Setea box-sizing a border-box */
 }
@@ -21,6 +22,7 @@ body {
   box-sizing: border-box; /* Asegura que padding y border son incluidos en width/height total*/
   background: linear-gradient(to bottom, #0e010e, #aa76b1);
   background-repeat: no-repeat;
+  
 
 }
 
@@ -92,6 +94,7 @@ a:hover{
 /*MAIN                                                                   */
 main{
     height: 100vh;
+    
     overflow:auto;
     background: linear-gradient(to bottom, #0e010e, #aa76b1);
     background-repeat: no-repeat;
@@ -109,7 +112,7 @@ main{
 form{
     display: flex;
     flex-direction: column;
-    width: 100%; 
+    width: 80%; 
     max-width: 350px; 
     margin:5% auto;
     
@@ -163,64 +166,7 @@ footer{
 
 
 
-/* MEDIA 800PX */
 
-@media (max-width: 800px) {
-    header {
-        height: 150px;
-    }
-    h1 {
-        font-size: 2rem;
-        letter-spacing: 0.2rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        letter-spacing: 2rem;
-        text-shadow: 5px 5px 5px  rgb(16, 223, 238); 
-    }
-    .menu {
-        font-size: 1.2rem; 
-    }
-    #itemCarrousel-2 {
-        background-image: none; 
-    }
-    .footer1{
-        top: 0%;
-        left: 0%;
-        padding: 0%;
-        padding-top:0rem;
-        border: 0rem;
-    }
-}
-
-/* MEDIA 400PX */
-@media (max-width: 400px) {
-    header {
-        height: 75px;
-    }
-    h1 {
-        font-size: 1.5rem;
-        letter-spacing: 0;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        letter-spacing: 2rem;
-        text-shadow: 5px 5px 5px  rgb(16, 223, 238);  
-    }
-    .menu {
-        font-size: 1rem; 
-    }
-    #itemCarrousel-2 {
-        background-image: none; 
-    }
-    .footer1{
-        top: 0%;
-        left: 0%;
-        padding: 0%;
-        padding-top:0rem;
-        border: 0rem;
-    }
-}
 
 
 @media (max-width: 1164px) and (max-height: 966px)  {
@@ -231,27 +177,27 @@ footer{
         background-size:  100%;
         background-repeat: no-repeat;
         background-position: center end;
-        width: 100vw;
-        height: 100vh;
+        width: 80%;
+        height: 100%;
     }
     nav{
-        width: 110%;
+        width: 100%;
     }
     header{
         height: 100px;
-        width: 110%;
+        width: 100%;
 
     }
 
     footer{
-        width: 110%;
+        width: 100%;
 
     }
 
 
     h1{
         z-index: 2;
-        font-size: 4rem;
+        font-size: 20px;
         font-family: 'Sedgwick Ave Display', cursive;
         position: absolute;
         display: flex;
@@ -263,16 +209,23 @@ footer{
         text-align: center;
         text-shadow:2px 2px 15px rgb(228, 8, 63);
         justify-content: space-evenly;
-        margin-left: 30px;
+        margin-left: 20px;
+        margin-top: 10px;
+
     }
     
+    formcontacto{
+
+        width: 60%;
+    }
     .imgprincipal{
         z-index: 999;
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
     
     }
     
 }
+
 
 
